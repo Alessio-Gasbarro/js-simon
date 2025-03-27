@@ -38,6 +38,11 @@ for (let i = 0; i < 5; i++){
 }
 console.log(numbers);
 
+//DESPAWN NUMBERS AFTER COUNTDOWN END SCRIPT;
+setTimeout(() => {
+    numbersList.innerHTML = '';
+}, (count * 1000));
+
 //ANSWERS COMPARISON SCRIPT
 function answersComp(answers, numbers){
     let result = [];
