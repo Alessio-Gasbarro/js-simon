@@ -13,3 +13,9 @@ const button = document.querySelector('button');
 const countdown = document.getElementById('countdown');
 const numbersList = document.getElementById('numbers-list');
 const answersForm = document.getElementById('answers-form');
+
+//RANDOM NUMBERS GENERATOR
+function randomNumbers(min, max){
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
