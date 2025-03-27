@@ -37,3 +37,17 @@ for (let i = 0; i < 5; i++){
     numbersList.innerHTML += `<li>${numbers[i]}</li>`;
 }
 console.log(numbers);
+
+//ANSWERS COMPARISON SCRIPT
+function answersComp(answers, numbers){
+    let result = [];
+    for (let i = 0; i < answers.length; i++){
+        for(let j = 0; j < numbers.length; j++){
+            if(answers[i] === numbers[j]){
+                result.push(answers[i]);
+                numbers.splice(j, 1);
+            }
+        }
+    }
+    return result;
+}
