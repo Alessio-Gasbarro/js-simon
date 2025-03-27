@@ -19,3 +19,14 @@ function randomNumbers(min, max){
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+//SMALL COUNTDOWN SCRIPT
+let count = 10;
+let interval = setInterval(() => {
+    countdown.innerHTML = count;
+    count--;
+    if (count === 0){
+        clearInterval(interval);
+        countdown.innerHTML = count;
+        document.querySelector('#answers-form').classList.remove('d-none');
+    }
+}, 1000);
