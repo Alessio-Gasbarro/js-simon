@@ -30,3 +30,10 @@ let interval = setInterval(() => {
         document.querySelector('#answers-form').classList.remove('d-none');
     }
 }, 1000);
+
+//RANDOM NUMBERS-TO ARRAY SAVER
+for (let i = 0; i < 5; i++){
+    numbers.push(randomNumbers(0,99));
+    numbersList.innerHTML += `<li>${numbers[i]}</li>`;
+}
+console.log(numbers);
